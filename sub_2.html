@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<input type="radio" name="open" class="d-none" id="open" >
+<input type="radio" name="open" class="d-none" id="close" checked>
+<input type="checkbox" name="so" class="d-none" id="so">
+<div class="position-fixed menu d-flex h-100">
+    <div class="icon_menu position-relative h-100">
+        <label for="open" class="d-flex open_label label justify-content-center align-items-center position-absolute"><img src="./사진/open.png" alt="" style="width: 15px;height:75px;"></label>
+        <label for="close" class="d-flex close_label label justify-content-center align-items-center position-absolute"><img src="./사진/close.png" alt="" style="width: 30px;height: 150px;"></label>
+        <label for="so" class="d-flex soicon justify-content-center align-items-center"><img src="./사진/share.png" alt="" style="width: 20px;height: 20px;"></label>
+        <label for="close" class="d-flex so_icon so_1 justify-content-center align-items-center"><img src="./사진/so_1.png" alt="" style="width: 20px;height: 20px;"></label>
+        <label for="close" class="d-flex so_icon so_2 justify-content-center align-items-center"><img src="./사진/so_2.png" alt="" style="width: 20px;height: 20px;"></label>
+        <label for="close" class="d-flex so_icon so_3 justify-content-center align-items-center"><img src="./사진/so_3.png" alt="" style="width: 20px;height: 20px;"></label>
+    </div>
+    <div class="menu_bar d-flex justify-content-center align-items-start h-100 flex-column pl-4">
+        <p><a href="">메인화면</a></p>
+        <p><a href="">특산품 안내</a></p>
+        <p><a href="">이벤트</a></p>
+        <p><a href="">구매후기</a></p>
+    </div>
+</div>
+<img src="./사진/photo%20(3).jpg" alt="" class="position-fixed sub_img w-100 h-100 img_1">
+    <div class="w-100 d-flex justify-content-center align-items-center flex-column">
+        <img src="./사진/event.png" alt="" style="margin-top: 50px">
+        <img src="./사진/stamp_1.png" alt="">
+        <div class="w-50 d-flex box d-flex justify-content-between align-items-center" style="color:#fff;">
+            <p class="m-0 ml-5">찾은 카드 수 : 1</p>
+            <div class="d-flex">
+                <button class="btn btn-primary start mr-1">게임시작</button>
+                <button class="btn btn-primary reload d-none mr-1">다시하기</button>
+                <button class="btn btn-primary hint mr-1">힌트보기</button>
+            </div>
+            <p class="m-0 mr-5">남은 시간 : 1분 30초</p>
+        </div>
+        <div class="w-50 card_list d-flex justify-content-center align-items-center flex-wrap">
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative change">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative change">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_event w-100 h-100 position-relative">
+                    <div class="front position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./사진/card.png" alt="">
+                    </div>
+                    <div class="back position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute" style="z-index: -3">
+                        <p>돼지고기</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="" style="position: absolute; z-index: 3850939789;left: 50%;top: 95%;transform: translate(-50%,-50%)"><p>Copyright (C) Gyeongsangbuk-do.All Rights Reserved.</p></div>
+
+</body>
+</html>
