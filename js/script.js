@@ -5,7 +5,7 @@ let removeEle = null;
 
 $(()=>{
     cardSet();
-    
+
     $(document)
         .on('mousemove click','.star input',function(e){
             this.value = Math.floor(e.offsetX/15);
