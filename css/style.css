@@ -1,261 +1,114 @@
-*{margin: 0;padding: 0;box-sizing: border-box;}
-li,ul{list-style: none}
-a{text-decoration: none;color: #fff;}
+a{color: #fff !important; text-decoration: none !important;}
+
+img{object-fit: cover}
+.visual{width: 33.333%;color: #fff; text-align: center;transition: 1s;animation: opa 1s forwards}
+.visual_img{z-index: -99;filter: brightness(80%)}
+.visual .contents{overflow: hidden;height: 100px;transition: 1s;opacity: 0;margin-top: 20px}
+
+.visual h1{font-size: 4rem;opacity: .4;margin: 0;}
+.visual .main_text{margin-top: 100px}
+.visual:hover{width: 60%;}
+.visual .img_1{z-index: -1;transition: 1s;}
+.visual .img_2{transition: 1s;z-index: -2;filter: brightness(50%);}
+.visual:hover .img_1{opacity: 0;}
+
+.visual:hover .contents {height: 200px;opacity: 1;}
+.contents p{margin: 0 2px;color: #bbb}
+.contents button{animation: up 1s infinite}
 
 
-.visual{
-    animation: opa 1s forwards;
-    transition: 1s;
-    color: #fff;
-    width: 33.333%;
-}
-.visual p{
-    color: #ccc;
-}
-.visual h1{
-    padding-top: 50px;
-    opacity: .4;
-    font-size: 4rem;
-}
-.visual img{
-    filter: brightness(80%);
-    z-index: -21312;
-    object-fit: cover;
-    transition: 1s;
 
-}
-.visual .text{
-    height: 100px;
-    opacity: 0;
-    overflow: hidden;
-    z-index: 99;
-    transition: 1s;
-}
-.img_1{
-    z-index: 2;
-    opacity: 1;
-}
-.img_2{
-    z-index: 1;
-    opacity: 0;
-}
-
-.visual:hover .img_2{
-    opacity: 1;
-}
-.visual:hover .img_1{
-    opacity: 0;
-}
-.visual:hover .text{
-    opacity: 1;
-    margin-top: 40px;
-    height: 200px;
-}
-.main_section{
-    height: 100vh;
-}
-.visual:hover{
-    width: 60%;
-}
-.visual:hover img{
-    filter: brightness(60%);
+@keyframes up {
+    0%{margin-top: 40px;}
+    50%{margin-top: 50px;}
+    100%{margin-top: 40px;}
 }
 
 
-.menu{
-    left: 100%;
-    margin-left: -30px;
-    width: 430px;
-    transition: .4s;
-    z-index: 1427912;
-}
-.icon_menu{
-    width: 30px;
-}
-.menu_bar{
-    background-color: #333;
-    width: 400px;
-}
-.label{
-    margin-top: 150px;
-    width: 30px;
-    height: 150px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-color: #000;
-}
+.menu{width: 180px; z-index: 1214214120;left:100%;margin-left: -30px; transition: .4s}
+.menu .icon_box{width: 30px;}
+.menu .menu_box{width: 150px; background: #333;padding: 120px 20px;}
+.menu .open_label{width: 30px;height: 150px;border-bottom-left-radius: 15px;border-top-left-radius: 15px;background: #000;margin-top: 120px; z-index: 2;}
+.menu .open_label img{width: 30px;height: 150px;}
+.menu ._open img{width: 15px;height: 75px;}
 
-.open_label{
-    z-index: 33;
-}
-#open:checked ~ .menu .open_label{
-    display: none;
-}
-#open:checked ~ .menu .close_label{
-    z-index: 3123;
-}
-#open:checked ~ .menu{
-    margin-left: -430px;
-}
-.soicon{
-    margin-top: 340px;
-    width: 30px;
-    height: 30px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-color: #000;
-}
-.so_icon{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    height: 40px;
-    width: 0;
-    margin-left: 30px;
-    transition: .1s;
-    overflow: hidden;
-}
-#so:checked ~ .menu .so_1{
-    animation: move .4s forwards;
-    animation-delay: .2s;
-}
-#so:checked ~ .menu .so_2{
-    animation: move .4s forwards;
-    animation-delay: .4s;
-}
+#close:checked ~ .menu ._close{display: none!important;}
+#open:checked ~ .menu{margin-left: -180px;}
 
-#so:checked ~ .menu .so_3{
-    animation: move .4s forwards;
-    animation-delay: .6s;
-}
-#so:checked ~ .menu .so_1 img{
-    animation: opa .4s forwards;
-    animation-delay: .8s;
-}
-#so:checked ~ .menu .so_2 img{
-    animation: opa .4s forwards;
-    animation-delay: 1s;
-}
-#so:checked ~ .menu .so_3 img{
-    animation: opa .4s forwards;
-    animation-delay: 1.2s;
-}
+.share{width: 30px;height: 30px; background-color: #000;border-bottom-left-radius: 10px;border-top-left-radius: 10px;margin-top: 330px;}
+.so{width: 0;overflow: hidden;margin-left: 30px;border-bottom-left-radius: 10px;border-top-left-radius: 10px;height: 30px;}
+.so img,.share img{width: 20px;height: 20px}
+.so_1{background-color: #e4606d}
+.so_2{background-color:#005cbf}
+.so_3{background-color:red}
+
+#icon:checked ~ .menu .so_1{animation: move 1s forwards;animation-delay: .2s}
+#icon:checked ~ .menu .so_2{animation: move 1s forwards;animation-delay: .4s}
+#icon:checked ~ .menu .so_3{animation: move 1s forwards;animation-delay: .6s}
+
+#icon:checked ~ .menu .so_1 img{animation: opa 1s forwards;animation-delay: .8s}
+#icon:checked ~ .menu .so_2 img{animation: opa 1s forwards;animation-delay: 1s}
+#icon:checked ~ .menu .so_3 img{animation: opa 1s forwards;animation-delay: 1.2s}
+
 @keyframes opa {
     0%{opacity: 0}
     100%{opacity: 1}
 }
+
 @keyframes move {
-    0%{
-        width: 0;
-        margin-left: 30px;}
-    100%{
-        width: 30px;
-        margin-left: 0;}
-}
-@keyframes up {
-    0%{margin-top: 40px}
-    50%{margin-top: 55px}
-    100%{margin-top: 40px}
-}
-.visual button{
-    animation: up 1s infinite;
-}
-.so_1{background: #e4606d}
-.so_2{background: #005cbf}
-.so_3{background: red}
-
-.sub_img{
-    width: 100vw;
-    height: 100vh;
-    z-index: -1239;
-    object-fit: cover;
-    filter: brightness(50%);
-}
-foreignObject{
-    display: none;
-    border-radius:20px;
-    color: #ccc;
-    overflow: hidden;
-}
-foreignObject img{
-    filter: brightness(50%);
-    z-index: -39;
-    object-fit: cover;
-}
-.main{
-    color: #a7e1b5;
+    0%{width: 0;margin-left: 30px;}
+    100%{width: 30px;margin-left: 0;}
 }
 
-path{
-    transition: .4s;
-}
-.path:hover,.path:hover path{
-    fill: #114b1f;
-}
+.back_img{filter: brightness(50%);z-index: -123123}
 
-.path[data-name="거제시"]:hover ~ foreignObject[data-name="거제시"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="거창군"]:hover ~ foreignObject[data-name="거창군"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="산청군"]:hover ~ foreignObject[data-name="산청군"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="함양군"]:hover ~ foreignObject[data-name="함양군"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="하동군"]:hover ~ foreignObject[data-name="하동군"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="남해군"]:hover ~ foreignObject[data-name="남해군"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="진주시"]:hover ~ foreignObject[data-name="진주시"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="합천군"]:hover ~ foreignObject[data-name="합천군"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="통영시"]:hover ~ foreignObject[data-name="통영시"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="의령군"]:hover ~ foreignObject[data-name="의령군"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="창녕군"]:hover ~ foreignObject[data-name="창녕군"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="사천시"]:hover ~ foreignObject[data-name="사천시"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="고성군"]:hover ~ foreignObject[data-name="고성군"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="창원시"]:hover ~ foreignObject[data-name="창원시"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="김해시"]:hover ~ foreignObject[data-name="김해시"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="양산시"]:hover ~ foreignObject[data-name="양산시"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="밀양시"]:hover ~ foreignObject[data-name="밀양시"]{display: block !important;animation: opa .4s forwards;}
-.path[data-name="창녕군"]:hover ~ foreignObject[data-name="창녕군"]{display: block !important;animation: opa .4s forwards;}
+foreignObject {color: #fff;width: 150px;height: 0;border-radius: 10px;transition: .4s;overflow: hidden}
+foreignObject h3,foreignObject p{margin: 0}
+foreignObject img{filter: brightness(50%);object-fit: cover;width: 150px;height: 200px;z-index: -2}
+.main{color: #00aa88}
 
-foreignObject:hover{
-    display: block !important;animation: opa .4s forwards;
+path{transition: .4s}
+.path:hover, .path:hover path{
+    fill: #3f3100;
 }
+text{pointer-events: none}
+
+.path[data-name="거창군"]:hover ~ foreignObject[data-name="거창군"]{height: 200px;}
+.path[data-name="창원시"]:hover ~ foreignObject[data-name="창원시"]{height: 200px;}
+.path[data-name="진주시"]:hover ~ foreignObject[data-name="진주시"]{height: 200px;}
+.path[data-name="통영시"]:hover ~ foreignObject[data-name="통영시"]{height: 200px;}
+.path[data-name="사천시"]:hover ~ foreignObject[data-name="사천시"]{height: 200px;}
+.path[data-name="김해시"]:hover ~ foreignObject[data-name="김해시"]{height: 200px;}
+.path[data-name="밀양시"]:hover ~ foreignObject[data-name="밀양시"]{height: 200px;}
+.path[data-name="거제시"]:hover ~ foreignObject[data-name="거제시"]{height: 200px;}
+.path[data-name="양산시"]:hover ~ foreignObject[data-name="양산시"]{height: 200px;}
+.path[data-name="의령군"]:hover ~ foreignObject[data-name="의령군"]{height: 200px;}
+.path[data-name="함안군"]:hover ~ foreignObject[data-name="함안군"]{height: 200px;}
+.path[data-name="창녕군"]:hover ~ foreignObject[data-name="창녕군"]{height: 200px;}
+.path[data-name="고성군"]:hover ~ foreignObject[data-name="고성군"]{height: 200px;}
+.path[data-name="남해군"]:hover ~ foreignObject[data-name="남해군"]{height: 200px;}
+.path[data-name="하동군"]:hover ~ foreignObject[data-name="하동군"]{height: 200px;}
+.path[data-name="산청군"]:hover ~ foreignObject[data-name="산청군"]{height: 200px;}
+.path[data-name="함양군"]:hover ~ foreignObject[data-name="함양군"]{height: 200px;}
+.path[data-name="합천군"]:hover ~ foreignObject[data-name="합천군"]{height: 200px;}
 
 
-.card{
-    width: 150px;
-    height: 200px;
-    overflow: hidden;
-    perspective: 200px;
-    margin: 10px 30px;
-}
-.card_event{
-    transform-style: preserve-3d;
-    transition: .4s;
-}
-.front{transform: rotateY(0);backface-visibility: hidden}
-.back{transform: rotateY(180deg);backface-visibility: hidden}
-.change{transform: rotateY(180deg);}
-.end{transform: rotateY(180deg);}
-.back img{width: 150px;height: 200px;object-fit: cover}
-.back p{
-    padding: 5px 10px;
-    color: #fff;
-    border-radius: 10px;
-    background-color: rgba(0,0,0,.4);
-}
-.box{
-    border-radius: 20px;
-    height: 80px;
-    background: rgba(0,0,0,.4);
-}
+foreignObject:hover{height: 200px;}
 
-.review_box{
-    padding: 10px;
-    background-color: rgba(0,0,0,.4);
-    border-radius: 20px;
-    margin: 10px 20px;
-    width: 400px;
-    height: 250px;
-    border: .25px solid #777;
-}
-.review_box img{
-    object-fit: cover;
-}
-.gray{
-    color: #ccc;
-}
+.setBox{background-color: rgba(0,0,0,.4);color: #fff;height: 80px;border-radius: 20px;}
+
+.card{width: 150px;height: 200px;perspective: 10rem;margin: 10px 30px;}
+.card_event{transform-style: preserve-3d;transition: .4s}
+
+.front{backface-visibility: hidden;transform: rotateY(0)}
+.back{backface-visibility: hidden;transform: rotateY(180deg)}
+.change{transform: rotateY(180deg)}
+.end{transform: rotateY(180deg)}
+
+.card img{width: 150px;height: 200px;object-fit: cover;z-index: -1}
+.card p {padding: 5px 10px;background: rgba(0,0,0,.4);color: #fff;}
+
+.box{width: 400px;height: 250px;background: rgba(0,0,0,.4);border-radius: 20px;padding: 10px 20px;color: #fff;border: 1px solid #ccc;margin: 10px 30px;}
+.gray{color: #ccc !important}
+
+.star{font-size: 2rem;}
