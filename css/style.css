@@ -92,7 +92,7 @@ text{pointer-events: none}
 .path[data-name="함양군"]:hover ~ foreignObject[data-name="함양군"]{height: 200px;}
 .path[data-name="합천군"]:hover ~ foreignObject[data-name="합천군"]{height: 200px;}
 
-
+.content_text{font-size: .8rem;}
 foreignObject:hover{height: 200px;}
 
 .setBox{background-color: rgba(0,0,0,.4);color: #fff;height: 80px;border-radius: 20px;}
