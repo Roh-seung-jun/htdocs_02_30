@@ -17,9 +17,9 @@ class ReviewController extends Controller
         $input = $request->only(['name','score','contents','shop','product']);
         $input['purchase-date'] = $request['date'];
         $review = Review::create($input);
-        foreach ($request['files'] as $file){
+        foreach ($request['files'] as $idx => $file){
             $img = base64_decode(explode(',',$file)[1]);
-            $url = './특산품/'.time().'.jpg';
+            $url = './특산품/'.time().'_'.$idx.'.jpg';
             file_put_contents($url,$img);
             $input = [
                 'review_id' => $review['id'],
@@ -29,6 +29,7 @@ class ReviewController extends Controller
         }
         return ['구매후기가 등록되었습니다.',$review];
     }
+
     public function load(Request $request){
         $file = [];
         $data = Review::orderBy('id','DESC')->paginate(10);
@@ -37,6 +38,7 @@ class ReviewController extends Controller
         }
         return [$data,$file];
     }
+
     public function show(Request $request){
         return [Review::find($request['id']),Review::find($request['id'])->files];
     }

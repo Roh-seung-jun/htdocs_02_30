@@ -153,10 +153,14 @@ $(()=>{
         .on('click','.hint',function(){
             cardView(3000);
         })
-        .on('keyup keydown onpaste','input[name="phone"]',function(){
+        .on('keyup keydown','input[name="phone"]',function(){
             let val = $(this).val();
             if(val.length > 13)return this.value = val.slice(0,13);
             this.value = val.replace(/[^0-9]/g,'').replace(/(\d{0,3})(\d{0,4})(\d{0,4})$/g,'$1-$2-$3').replace(/\-{1,2}$/g,'');
+            
+        })
+        .on('onpaste','input[name="phone"]',function(){
+            console.log('a');
         })
         .on('click','.card_submit',function(){
             const name = $('input[name="name"]').val();

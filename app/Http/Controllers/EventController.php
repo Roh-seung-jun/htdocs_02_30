@@ -11,6 +11,7 @@ class EventController extends Controller
     public function index(){
         return view('sub_2');
     }
+
     public function submit(Request $request){
         $input = $request->only(['name','phone','score']);
         $input['date'] = date('Y-m-d');

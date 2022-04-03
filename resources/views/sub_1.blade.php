@@ -52,7 +52,7 @@
         <text class="cls-5" transform="translate(537.44 334.56)">김해시</text>
         <foreignobject x="34.44" y="189.56" style="border-radius: 10px;" data-name="함양군">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/함양군_밤.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['함양군']['file_name']}}" alt="" class="position-absolute">
                 <h3>함양군</h3>
 
             @foreach($data['함양군']->items as $item)
@@ -66,7 +66,7 @@
         </foreignobject>
         <foreignobject x="107.44" y="103.56" style="border-radius: 10px;" data-name="거창군">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/거창군_사과.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['거창군']['file_name']}}" alt="" class="position-absolute">
                 <h3>거창군</h3>
 
                 @foreach($data['거창군']->items as $item)
@@ -80,7 +80,7 @@
         </foreignobject>
         <foreignobject x="213.44" y="194.56" style="border-radius: 10px;" data-name="합천군">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/합천군_돼지고기.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['합천군']['file_name']}}" alt="" class="position-absolute">
                 <h3>합천군</h3>
                 @foreach($data['합천군']->items as $item)
                     @if($data['합천군']['most'] === $item['item'])
@@ -93,7 +93,7 @@
         </foreignobject>
         <foreignobject x="99.44" y="285.56" style="border-radius: 10px;" data-name="산청군">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/산청군_약초.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['산청군']['file_name']}}" alt="" class="position-absolute">
                 <h3>산청군</h3>
 
                 @foreach($data['산청군']->items as $item)
@@ -107,7 +107,7 @@
         </foreignobject>
         <foreignobject x="71.44" y="409.56" style="border-radius: 10px;" data-name="하동군">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/하동군_녹차.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['하동군']['file_name']}}" alt="" class="position-absolute">
 
                 @foreach($data['함양군']->items as $item)
                     @if($data['하동군']['most'] === $item['item'])
@@ -120,7 +120,7 @@
         </foreignobject>
         <foreignobject x="219.44" y="377.56" style="border-radius: 10px;" data-name="진주시">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/진주시_고추.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['진주시']['file_name']}}" alt="" class="position-absolute">
                 <h3>진주시</h3>
 
                 @foreach($data['진주시']->items as $item)
@@ -134,7 +134,7 @@
         </foreignobject>
         <foreignobject x="178.44" y="462.56" style="border-radius: 10px;" data-name="사천시">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/사천시_멸치.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['사천시']['file_name']}}" alt="" class="position-absolute">
                 <h3>사천시</h3>
 
                 @foreach($data['사천시']->items as $item)
@@ -148,7 +148,7 @@
         </foreignobject>
         <foreignobject x="144.44" y="591.56" style="border-radius: 10px;" data-name="남해군">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/남해군_마늘.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['남해군']['file_name']}}" alt="" class="position-absolute">
                 <h3>남해군</h3>
 
                 @foreach($data['남해군']->items as $item)
@@ -162,7 +162,7 @@
         </foreignobject>
         <foreignobject x="293.44" y="470.56" style="border-radius: 10px;" data-name="고성군">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/고성군_방울토마토.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['고성군']['file_name']}}" alt="" class="position-absolute">
                 <h3>고성군</h3>
 
                 @foreach($data['고성군']->items as $item)
@@ -176,7 +176,7 @@
         </foreignobject>
         <foreignobject x="312.44" y="562.56" style="border-radius: 10px;" data-name="통영시">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/통영시_굴.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['통영시']['file_name']}}" alt="" class="position-absolute">
                 <h3>통영시</h3>
 
                 @foreach($data['통영시']->items as $item)
@@ -190,7 +190,7 @@
         </foreignobject>
         <foreignobject x="446.44" y="539.56" style="border-radius: 10px;" data-name="거제시">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/거제시_유자.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['거제시']['file_name']}}" alt="" class="position-absolute">
                 <h3>거제시</h3>
 
                 @foreach($data['거제시']->items as $item)
@@ -204,7 +204,7 @@
         </foreignobject>
         <foreignobject x="426.44" y="387.56" style="border-radius: 10px;" data-name="창원시">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/창원시_풋고추.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['창원시']['file_name']}}" alt="" class="position-absolute">
                 <h3>창원시</h3>
 
                 @foreach($data['창원시']->items as $item)
@@ -218,7 +218,7 @@
         </foreignobject>
         <foreignobject x="351.44" y="328.56" style="border-radius: 10px;" data-name="함안군">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/함안군_곶감.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['함안군']['file_name']}}" alt="" class="position-absolute">
                 <h3>함안군</h3>
 
                 @foreach($data['함안군']->items as $item)
@@ -232,7 +232,7 @@
         </foreignobject>
         <foreignobject x="280.44" y="274.56" style="border-radius: 10px;" data-name="의령군">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/의령군_수박.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['의령군']['file_name']}}" alt="" class="position-absolute">
                 <h3>의령군</h3>
 
                 @foreach($data['의령군']->items as $item)
@@ -246,7 +246,7 @@
         </foreignobject>
         <foreignobject x="372.44" y="206.56" style="border-radius: 10px;" data-name="창녕군">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/창녕군_양파.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['창녕군']['file_name']}}" alt="" class="position-absolute">
                 <h3>창녕군</h3>
 
                 @foreach($data['창녕군']->items as $item)
@@ -260,7 +260,7 @@
         </foreignobject>
         <foreignobject x="494.44" y="227.56" style="border-radius: 10px;" data-name="밀양시">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/밀양시_대추.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['밀양시']['file_name']}}" alt="" class="position-absolute">
                 <h3>밀양시</h3>
 
                 @foreach($data['밀양시']->items as $item)
@@ -274,7 +274,7 @@
         </foreignobject>
         <foreignobject x="612.44" y="268.56" style="border-radius: 10px;" data-name="양산시">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/양산시_매실.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['양산시']['file_name']}}" alt="" class="position-absolute">
                 <h3>양산시</h3>
 
                 @foreach($data['양산시']->items as $item)
@@ -288,7 +288,7 @@
         </foreignobject>
         <foreignobject x="537.44" y="334.56" style="border-radius: 10px;" data-name="김해시">
             <div xmlns="http://www.w3.org/1999/xhtml" class="d-flex justify-content-center align-items-center flex-column position-relative w-100 h-100">
-                <img src="./특산품/김해시_단감.jpg" alt="" class="position-absolute">
+                <img src="./특산품/{{$data['김해시']['file_name']}}" alt="" class="position-absolute">
                 <h3>김해시</h3>
 
                 @foreach($data['김해시']->items as $item)

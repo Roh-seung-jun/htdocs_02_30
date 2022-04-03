@@ -13,6 +13,11 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
     @yield('script')
+    <script>
+        @if(session()->has('msg'))
+            alert('{{session()->get('msg')}}');
+        @endif
+    </script>
 </head>
 <body style="height: 100vh">
 <input type="radio" name="open" id="open" class="d-none" >
@@ -42,7 +47,14 @@
         <p><a href="{{route('/')}}">메인 페이지</a></p>
         <p><a href="{{route('map')}}">특산품 안내</a></p>
         <p><a href="{{route('event')}}">이벤트</a></p>
-        <p><a href="#">구매후기</a></p>
+        <p><a href="{{route('review')}}">구매후기</a></p>
+        @if(auth()->user())
+            <p><a href="{{route('logout')}}">로그아웃</a></p>
+            <p><a href="{{route('mset')}}">특산품 관리</a></p>
+            <p><a href="{{route('eset')}}">이벤트 관리</a></p>
+        @else
+            <p><a href="{{route('admin')}}">로그인</a></p>
+        @endif
     </div>
 </div>
 
